@@ -9,7 +9,6 @@
 #import "GameScene.h"
 
 @implementation GameScene
-@synthesize labelDifficulty;
 @synthesize textFieldGuess;
 @synthesize textViewGuesses;
 @synthesize labelGuessedLetters;
@@ -127,7 +126,6 @@ int playerScore;
 {
     [super viewDidLoad];
     self.textViewGuesses.text=@"";
-    self.labelDifficulty.text=self.stringDifficulty;
     self.stringHiddenWord=[self getMagicWord];
     self.labelLettersInWord.text=[NSString stringWithFormat:@"%i", self.stringHiddenWord.length];
     NSString *wordPlaceHolder=@"";
@@ -171,7 +169,6 @@ int playerScore;
 
 - (void)viewDidUnload
 {
-    [self setLabelDifficulty:nil];
     [self setTextFieldGuess:nil];
     [self setTextViewGuesses:nil];
     [self setLabelGuessedLetters:nil];

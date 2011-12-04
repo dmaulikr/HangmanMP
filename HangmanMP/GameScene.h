@@ -10,7 +10,6 @@
 
 @interface GameScene : UIViewController <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *labelDifficulty;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldGuess;
 @property (weak, nonatomic) IBOutlet UITextView *textViewGuesses;
 @property (weak, nonatomic) IBOutlet UILabel *labelGuessedLetters;
